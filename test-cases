@@ -1,0 +1,25 @@
+# Printer Rescue - Test Cases (v1)
+
+1) User can choose a brand (HP/Canon/Lexmark/Brother)  
+Expected: brand selects and next step shows.
+
+2) User can start “Find IP address” guide  
+Expected: guide opens with simple steps.
+
+3) IP field accepts a valid IP like 192.168.1.25  
+Expected: no error, continue.
+
+4) IP field rejects invalid IP like 999.1.1.1  
+Expected: shows clear error message.
+
+5) App handles “I don’t know my printer model”  
+Expected: shows generic instructions (no dead end).
+
+6) App handles “printer has no display”  
+Expected: gives button-based instructions.
+
+7) App handles APIPA IP 169.254.x.x  
+Expected: warns it’s likely not on network + next steps.
+
+8) App generates a ticket summary with brand + IP  
+Expected: summary is readable and has copy button.
